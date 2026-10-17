@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impacto en Detalle — Entre Raíces</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0c100e',
+              card: '#141a17',
+              neon: '#22c55e',
+              neonHover: '#16a34a',
+              muted: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-neon selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 w-full z-40 bg-brand-dark/85 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-3.5 h-3.5 rounded-full bg-brand-neon shadow-[0_0_12px_#22c55e]"></div>
+        <span class="text-xl font-black tracking-tight uppercase">Entre Raíces</span>
+      </a>
+
+      <nav class="flex items-center gap-6 text-sm font-medium">
+        <a href="index.html" class="text-slate-300 hover:text-white transition">← Volver al Inicio</a>
+        <a href="index.html#catalogo" class="bg-brand-neon hover:bg-brand-neonHover text-black font-bold text-xs uppercase px-4 py-2 rounded-lg transition tracking-wider">
+          Ir a Tienda
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER IMPACTO -->
+  <section class="relative pt-36 pb-20 px-6 border-b border-white/10 overflow-hidden">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-brand-neon/10 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <span class="inline-block py-1 px-4 rounded-full border border-brand-neon/30 bg-brand-neon/10 text-brand-neon text-xs font-semibold uppercase tracking-widest mb-4">
+        Transparencia & Reporte Social 2026
+      </span>
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6">
+        Cada kilo de poda cuenta una nueva historia.
+      </h1>
+      <p class="text-lg text-brand-muted leading-relaxed">
+        Analítica en tiempo real de cómo transformamos residuos urbanos destinados a la incineración en independencia alimentaria, empleabilidad y regeneración del suelo en América Latina.
+      </p>
+    </div>
+  </section>
+
+  <!-- MÉTRICAS CLAVE REUTILIZADAS -->
+  <section class="bg-brand-card/50 py-12 px-6 border-b border-white/10">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <p class="text-4xl sm:text-5xl font-black text-brand-neon mb-2 counter" data-target="245">0</p>
+        <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Tons Poda Rescatadas</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-black text-white mb-2 counter" data-target="118">0</p>
+        <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Tons Compost Producido</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-black text-white mb-2 counter" data-target="28">0</p>
+        <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Centros Transformados</p>
+      </div>
+      <div>
+        <p class="text-4xl sm:text-5xl font-black text-brand-neon mb-2 counter" data-target="14200">0</p>
+        <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Kg Alimento Cosechado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOS 3 PILARES A FONDO -->
+  <section class="py-20 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs uppercase tracking-widest text-brand-neon font-bold mb-3">Auditoría del Modelo</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Triple Impacto Demostrable</h3>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Ambiental -->
+      <div class="bg-brand-card p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-neon/10 border border-brand-neon/20 flex items-center justify-center text-brand-neon font-bold text-xl mb-6">
+            🌱
+          </div>
+          <h4 class="text-2xl font-bold mb-3 text-white">Impacto Ambiental</h4>
+          <p class="text-sm text-brand-muted leading-relaxed mb-6">
+            Evitamos la quema a cielo abierto de follaje y ramas en ciudades metropolitanas. Cada tonelada de biomasa compostada en lugar de quemada previene emisiones de CO₂e y metano nocivo.
+          </p>
+        </div>
+        <div class="bg-brand-dark/70 p-4 rounded-xl border border-white/5">
+          <span class="text-xs text-brand-muted block">Emisiones directas evitadas:</span>
+          <span class="text-xl font-black text-brand-neon">~318 Tons CO₂e</span>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div class="bg-brand-card p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-neon/10 border border-brand-neon/20 flex items-center justify-center text-brand-neon font-bold text-xl mb-6">
+            🤝
+          </div>
+          <h4 class="text-2xl font-bold mb-3 text-white">Reinserción & Formación</h4>
+          <p class="text-sm text-brand-muted leading-relaxed mb-6">
+            Centros penitenciarios, orfanatos y hogares de rehabilitación reciben capacitaciones agronómicas formales. Las personas adquieren oficios técnicos certificados en agroecología urbana.
+          </p>
+        </div>
+        <div class="bg-brand-dark/70 p-4 rounded-xl border border-white/5">
+          <span class="text-xs text-brand-muted block">Horas de capacitación práctica:</span>
+          <span class="text-xl font-black text-white">+840 Horas</span>
+        </div>
+      </div>
+
+      <!-- Económico -->
+      <div class="bg-brand-card p-8 rounded-3xl border border-white/10 flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-xl bg-brand-neon/10 border border-brand-neon/20 flex items-center justify-center text-brand-neon font-bold text-xl mb-6">
+            📈
+          </div>
+          <h4 class="text-2xl font-bold mb-3 text-white">Retorno Económico</h4>
+          <p class="text-sm text-brand-muted leading-relaxed mb-6">
+            El excedente de cosecha y compost vendido por la web retorna directamente a los centros en forma de mejoras estructurales, insumos médicos, alimentación balanceada y herramientas.
+          </p>
+        </div>
+        <div class="bg-brand-dark/70 p-4 rounded-xl border border-white/5">
+          <span class="text-xs text-brand-muted block">Fondos canalizados a centros:</span>
+          <span class="text-xl font-black text-brand-neon">+$22,400 USD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS DE ÉXITO EN CAMPO -->
+  <section class="py-20 px-6 max-w-7xl mx-auto border-t border-white/10">
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs uppercase tracking-widest text-brand-neon font-bold mb-2 block">Casos de Estudio</span>
+      <h3 class="text-3xl font-extrabold text-white">Dónde se ve reflejado</h3>
+    </div>
+
+    <div class="space-y-6">
+      <!-- Caso 1 -->
+      <div class="bg-brand-card p-8 rounded-3xl border border-white/10 grid md:grid-cols-3 gap-6 items-center">
+        <div class="md:col-span-2">
+          <span class="text-xs font-bold text-brand-neon bg-brand-neon/10 px-3 py-1 rounded-md mb-3 inline-block">Penitenciaría</span>
+          <h4 class="text-xl font-bold text-white mb-2">Taller Productivo San Jerónimo</h4>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Con la recepción de 45 toneladas de poda urbana, 24 personas privadas de libertad instalaron 12 bancales elevados. Actualmente abastecen de lechuga y tomate el comedor del centro y el 40% restante se comercializa en la tienda digital de Entre Raíces.
+          </p>
+        </div>
+        <div class="border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 text-left">
+          <p class="text-xs text-brand-muted">Autosuficiencia en verduras lograda:</p>
+          <p class="text-3xl font-black text-white mt-1">68%</p>
+          <span class="text-xs text-brand-neon block mt-1">Nodo Activo</span>
+        </div>
+      </div>
+
+      <!-- Caso 2 -->
+      <div class="bg-brand-card p-8 rounded-3xl border border-white/10 grid md:grid-cols-3 gap-6 items-center">
+        <div class="md:col-span-2">
+          <span class="text-xs font-bold text-brand-neon bg-brand-neon/10 px-3 py-1 rounded-md mb-3 inline-block">Hogar de Acogida Infantil</span>
+          <h4 class="text-xl font-bold text-white mb-2">Huerto Pedagógico Renacer</h4>
+          <p class="text-sm text-brand-muted leading-relaxed">
+            Se transformó un vertedero de escombros en un huerto frutal y centro de compostaje activo. Los jóvenes en edad escolar aprenden ciencias naturales en campo y financian sus materiales escolares anuales con la venta de compost envasado.
+          </p>
+        </div>
+        <div class="border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0 md:pl-6 text-left">
+          <p class="text-xs text-brand-muted">Jóvenes involucrados:</p>
+          <p class="text-3xl font-black text-white mt-1">32 Niños</p>
+          <span class="text-xs text-brand-neon block mt-1">Nodo Activo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="py-20 px-6 text-center border-t border-white/10">
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-3xl font-extrabold text-white mb-4">¿Quieres sumar tu organización o apoyar el proyecto?</h3>
+      <p class="text-sm text-brand-muted mb-8">
+        Adquiere los insumos y cosechas producidos por estos centros o postula tu institución para convertirte en nodo de recolección y cultivo.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index.html#catalogo" class="bg-brand-neon hover:bg-brand-neonHover text-black font-bold text-sm uppercase px-8 py-3.5 rounded-xl transition">
+          Comprar en la Tienda
+        </a>
+        <a href="index.html" class="border border-white/20 hover:border-white text-white font-medium text-sm uppercase px-8 py-3.5 rounded-xl transition">
+          Volver a Inicio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-12 px-6 text-center text-xs text-brand-muted">
+    <p>© 2026 Entre Raíces. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT MODULAR PARA REUTILIZAR LOS CONTADORES -->
+  <script type="module">
+    import { initCounters } from './js/counters.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initCounters();
+    });
+  </script>
+</body>
+</html>

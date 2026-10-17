@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre Raíces — Cultivamos Oportunidades</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0c100e',
+              card: '#141a17',
+              neon: '#22c55e',
+              neonHover: '#16a34a',
+              muted: '#94a3b8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-neon selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 w-full z-40 bg-brand-dark/85 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-3.5 h-3.5 rounded-full bg-brand-neon shadow-[0_0_12px_#22c55e]"></div>
+        <span class="text-xl font-black tracking-tight uppercase">Entre Raíces</span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+  <a href="#quienes-somos" class="hover:text-brand-neon transition">Quiénes Somos</a>
+  <a href="impacto.html" class="hover:text-brand-neon transition">Impacto a Fondo</a>
+  <a href="#modelo" class="hover:text-brand-neon transition">Cómo Funciona</a>
+  <a href="#catalogo" class="hover:text-brand-neon transition">Catálogo</a>
+</nav>
+
+      <div class="flex items-center gap-4">
+        <select id="country-filter" class="bg-brand-card text-xs border border-white/20 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-brand-neon cursor-pointer">
+          <option value="todos">🌐 Todos los países</option>
+          <option value="ni">🇳🇮 Nicaragua</option>
+          <option value="co">🇨🇴 Colombia</option>
+        </select>
+        <a href="#catalogo" class="hidden sm:inline-block bg-brand-neon hover:bg-brand-neonHover text-black font-bold text-xs uppercase px-5 py-2.5 rounded-lg transition tracking-wider">
+          Comprar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center justify-center pt-24 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="img/hero-bg.jpg" alt="Fondo" class="w-full h-full object-cover opacity-25">
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-dark/70 via-brand-dark/90 to-brand-dark"></div>
+    </div>
+
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-neon/15 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center z-10 py-16">
+      <span class="inline-block py-1 px-4 rounded-full border border-brand-neon/30 bg-brand-neon/10 text-brand-neon text-xs font-semibold uppercase tracking-widest mb-6">
+        Economía Circular & Impacto Comunitario
+      </span>
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.1] mb-6">
+        De la poda urbana al alimento de comunidades.
+      </h1>
+      <p class="text-lg sm:text-xl text-brand-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+        Recuperamos biomasa vegetal que iba a ser quemada, la transformamos en huertos comunitarios y comercializamos productos agrícolas de alto impacto social.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#catalogo" class="w-full sm:w-auto bg-brand-neon hover:bg-brand-neonHover text-black font-bold text-sm uppercase px-8 py-4 rounded-xl transition shadow-[0_0_25px_rgba(34,197,94,0.3)]">
+          Explorar Catálogo
+        </a>
+        <a href="#quienes-somos" class="w-full sm:w-auto border border-white/20 hover:border-white text-white font-medium text-sm uppercase px-8 py-4 rounded-xl transition">
+          Quiénes Somos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section id="quienes-somos" class="py-24 px-6 max-w-7xl mx-auto border-t border-white/10">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs uppercase tracking-widest text-brand-neon font-bold mb-3 block">Nuestra Razón de Ser</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">
+          No solo reciclamos materia orgánica, sembramos autonomía social.
+        </h2>
+        <p class="text-brand-muted leading-relaxed mb-6">
+          En América Latina, la poda urbana y los residuos verdes terminan comúnmente quemados a cielo abierto. Al mismo tiempo, escuelas, hogares infantiles y centros penitenciarios necesitan fuentes sostenibles de alimentación e ingresos económicos.
+        </p>
+        <p class="text-brand-muted leading-relaxed mb-8">
+          <strong class="text-white">Entre Raíces</strong> recoge los residuos vegetales, los transporta a centros aliados y los capacita para producir compost curado, instalar huertos y comercializar cosechas de alto valor.
+        </p>
+        <div class="grid grid-cols-2 gap-6 border-t border-white/10 pt-6">
+          <div>
+            <h4 class="text-lg font-bold text-white mb-1">Misión</h4>
+            <p class="text-xs text-brand-muted">Cerrar el ciclo de residuos urbanos generando desarrollo social y alimentario tangible.</p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-white mb-1">Trazabilidad</h4>
+            <p class="text-xs text-brand-muted">Cada producto indica con total transparencia la institución que lo produjo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-brand-card">
+          <img src="img/quienes-somos.jpg" alt="Comunidad en huerto" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACTO -->
+  <section id="impacto" class="border-y border-white/10 bg-brand-card/50 py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-8">
+        <div>
+          <p class="text-3xl sm:text-5xl font-black text-brand-neon mb-2 counter" data-target="245">0</p>
+          <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Tons Poda Rescatadas</p>
+        </div>
+        <div>
+          <p class="text-3xl sm:text-5xl font-black text-white mb-2 counter" data-target="118">0</p>
+          <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Tons Compost Curado</p>
+        </div>
+        <div>
+          <p class="text-3xl sm:text-5xl font-black text-white mb-2 counter" data-target="28">0</p>
+          <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Centros Activos</p>
+        </div>
+        <div>
+          <p class="text-3xl sm:text-5xl font-black text-brand-neon mb-2 counter" data-target="14200">0</p>
+          <p class="text-xs uppercase tracking-wider text-brand-muted font-semibold">Kg Cosechados</p>
+        </div>
+      </div>
+      
+      <!-- Botón para ver más a fondo -->
+      <div class="text-center">
+        <a href="impacto.html" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-neon hover:text-white transition group">
+          <span>Ver informe de impacto detallado y centros asociados</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="modelo" class="py-24 px-6 max-w-7xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs uppercase tracking-widest text-brand-neon font-bold mb-3">Trazabilidad Circular</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">El Ciclo de Entre Raíces</h3>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-brand-card p-8 rounded-2xl border border-white/10">
+        <span class="text-brand-neon font-mono font-bold text-lg">01.</span>
+        <h4 class="text-xl font-bold mt-4 mb-2">Recolección y Logística</h4>
+        <p class="text-sm text-brand-muted leading-relaxed">
+          Recogemos y transportamos poda urbana y residuos vegetales hacia centros aliados antes de que se conviertan en basura quemada.
+        </p>
+      </div>
+      <div class="bg-brand-card p-8 rounded-2xl border border-white/10">
+        <span class="text-brand-neon font-mono font-bold text-lg">02.</span>
+        <h4 class="text-xl font-bold mt-4 mb-2">Capacitación y Huertos</h4>
+        <p class="text-sm text-brand-muted leading-relaxed">
+          Capacitamos a las comunidades para generar compost biológico, preparar bancales y cultivar hortalizas frescas.
+        </p>
+      </div>
+      <div class="bg-brand-card p-8 rounded-2xl border border-white/10">
+        <span class="text-brand-neon font-mono font-bold text-lg">03.</span>
+        <h4 class="text-xl font-bold mt-4 mb-2">Comercialización Directa</h4>
+        <p class="text-sm text-brand-muted leading-relaxed">
+          Los excedentes se comercializan aquí, permitiendo a los centros autofinanciar sus programas y herramientas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO (Contenedor donde main.js inyecta las tarjetas) -->
+  <section id="catalogo" class="py-24 px-6 bg-brand-card/30 border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-brand-neon font-bold mb-3">Tienda Oficial</h2>
+          <h3 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Catálogo de Productos</h3>
+        </div>
+        <p class="text-sm text-brand-muted max-w-sm">
+          Toca cualquier tarjeta para examinar el origen comunitario y destino de los fondos.
+        </p>
+      </div>
+
+      <!-- Grid dinámico -->
+      <div id="product-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- MODAL DE DETALLE Y TRAZABILIDAD -->
+  <div id="product-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-brand-card border border-white/15 rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl relative my-auto">
+      <button id="modal-close" class="absolute top-4 right-4 z-10 bg-brand-dark/80 hover:bg-white text-white hover:text-black w-10 h-10 rounded-full flex items-center justify-center border border-white/20 transition cursor-pointer text-xl font-bold">
+        &times;
+      </button>
+      <div class="grid md:grid-cols-2">
+        <div class="relative bg-black min-h-[260px] md:min-h-full">
+          <img id="modal-img" src="" alt="Producto" class="w-full h-full object-cover">
+          <span id="modal-badge" class="absolute top-4 left-4 text-xs font-bold bg-brand-dark/85 backdrop-blur-md px-3 py-1.5 rounded-lg text-brand-neon border border-white/10"></span>
+        </div>
+        <div class="p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span id="modal-category" class="text-xs uppercase font-bold tracking-widest text-brand-muted block mb-1"></span>
+            <h3 id="modal-title" class="text-2xl sm:text-3xl font-extrabold text-white mb-3"></h3>
+            <p id="modal-desc" class="text-sm text-brand-muted leading-relaxed mb-6"></p>
+
+            <div class="bg-brand-dark/70 border border-brand-neon/30 rounded-2xl p-4 mb-6">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-neon animate-pulse"></span>
+                <span class="text-xs uppercase tracking-wider font-bold text-brand-neon">Trazabilidad Comunitaria</span>
+              </div>
+              <p id="modal-origin" class="text-sm font-semibold text-white"></p>
+              <p id="modal-origin-type" class="text-xs text-brand-muted mb-2"></p>
+              <p id="modal-impact" class="text-xs text-slate-300 border-t border-white/10 pt-2 italic"></p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between border-t border-white/10 pt-4">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio</span>
+              <span id="modal-price" class="text-3xl font-black text-white"></span>
+            </div>
+            <button class="bg-brand-neon hover:bg-brand-neonHover text-black font-bold text-sm uppercase px-6 py-3.5 rounded-xl transition shadow-[0_0_20px_rgba(34,197,94,0.3)]">
+              Confirmar Pedido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-12 px-6 text-center text-xs text-brand-muted">
+    <p>© 2026 Entre Raíces. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT MODULAR PRINCIPAL (type="module" es clave) -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

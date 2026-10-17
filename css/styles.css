@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Efecto de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ocultar barra de desplazamiento cuando el modal esté abierto */
+body.modal-open {
+  overflow: hidden;
+}
